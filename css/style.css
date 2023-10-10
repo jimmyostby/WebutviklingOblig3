@@ -1,3 +1,62 @@
 html{
-    background-color: aqua;
+    background-color: #f6efeb;
 }
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+}
+
+header nav ul{
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.default-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.default-flex article{
+    flex-basis: 33%;
+    min-width: 300px;
+}
+
+.default-flex article img{
+    width: 100%;
+    
+}
+
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    color: #a67a5b;
+}
+
+#logo{
+    
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #a67a5b;
+}
+
+
+
+#informasjon{
+    text-align: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+
+
+
