@@ -6,39 +6,46 @@ html{
     box-sizing: border-box;
 }
 
-header{
-    display: flex;
-}
-
-header nav ul{
-    display: flex;
-    gap: 0.5rem;
-    list-style: none;
-}
-
-.default-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.default-flex article{
-    flex-basis: 33%;
-    min-width: 300px;
-}
-
-.default-flex article img{
-    width: 100%;
-    
-}
-
-
 body{
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: 1rem auto;
+    max-width: 1400px;
     width: 100%;
     color: #a67a5b;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.popular{
+    text-align: center;
+}
+
+.tofler{
+    text-align: center;
+}
+
+.logginn{
+    text-align: center;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 auto);
+    grid-template-areas: header main footer;
+
+}
+
+header{
+    grid-area: top;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: bottom;
+}
+
 
 #logo{
     
@@ -47,16 +54,82 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     color: #a67a5b;
+    
 }
 
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header nav ul{
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    font-size: small;
+}
+
+header nav input{
+    text-align: center;
+    align-items: baseline; 
+    margin-bottom: 1rem; 
+}
+
+
+.default-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+
+.default-flex h3{
+    flex-basis: 100%;
+}
+
+.default-flex section{
+    text-decoration-color: #a67a5b;
+}
+
+.default-flex article{
+    flex-basis: 25%;
+    min-width: 250px;
+    color: #a67a5b;
+}
+
+.default-flex article img{
+    width: 100%;
+    
+}
 
 
 #informasjon{
     text-align: center;
-    gap: 0.5rem;
     list-style: none;
+    padding: 0;
+}
+
+#informasjon li{
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    padding: 1rem;
+    background-color: #a67a5b;
+    color: #f6efeb;
+    border-radius: 30%;
 }
 
 
+@media only screen and (min-width: 850px){
+    #grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
-
+header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
