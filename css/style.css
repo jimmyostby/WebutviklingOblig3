@@ -1,3 +1,5 @@
+/*Dette er html*/
+
 html{
     background-color: #f6efeb;
 }
@@ -8,8 +10,51 @@ html{
 
 body{
     margin: 1rem auto;
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
     color: #a67a5b;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#logo{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #a67a5b;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;   
+}
+
+header nav ul{
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+
+
+/*Dette er flex på index-siden*/
+
+.default-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.default-flex h3{
+    flex-basis: 100%;
+}
+
+.default-flex article{
+    flex-basis: 33%;
+    min-width: 300px;
+}
+
+.default-flex article img{
+    width: 100%;
+}
+
