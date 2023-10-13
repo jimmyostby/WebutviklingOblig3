@@ -18,40 +18,95 @@ body{
 
 #logo{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
+    text-transform: uppercase;
     color: #a67a5b;
+    letter-spacing: 5px;
+    margin-left: 42px;
 }
+
 
 header{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;   
+    align-items: baseline;
+
 }
 
 header nav ul{
     display: flex;
-    gap: 0.5rem;
+    gap: 5rem;
     list-style: none;
+    padding-left: 33px;
 }
 
+.sokefelt{
+    align-items: center;
+    margin-left: 76px;
+    bor
+}
 
+h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.pynt{
+    background-color: #e8dcb5; 
+    height: 420px;
+    margin-bottom: auto; 
+    padding-bottom: 10px;  
+}
+
+.pynt h3{
+    justify-content: space-between;
+    margin-top: 120px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #a67a5b;
+}
+
+footer nav ul li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer{
+    align-content: center;
+}
 
 /*Dette er flex på index-siden*/
 
 .default-flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+ul{
+    justify-content: center;
 }
 
 .default-flex h3{
     flex-basis: 100%;
 }
 
+.default-flex section{
+    margin-top: 50px;
+}
+
 .default-flex article{
     flex-basis: 33%;
     min-width: 300px;
+    justify-content: center;
 }
 
 .default-flex article img{
@@ -64,19 +119,24 @@ header nav ul{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "topp" "hoveromrader" "bunn";
+    grid-template-areas: 
+                        "header header header"
+                        "main main main"
+                        "footer footer footer" ;
+    
+
 }
 
 header{
-    grid-area: topp;
+    grid-area: header;
 }
 
 main{
-    grid-area: hovedomrade;
+    grid-area: main;
 }
 
 footer{
-    grid-area: bunn;
+    grid-area: footer;
 }
 
 /*Dette er media queries for desktop*/
@@ -88,8 +148,8 @@ footer{
     }
 
     header{
-        grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
@@ -99,7 +159,7 @@ footer{
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 2;
-        grid-row-end: 4;
+        grid-row-end: 3;
     }
     
     main h1{
@@ -107,10 +167,38 @@ footer{
     }
 
     footer{
-        grid-column-start: 1;
+        grid-column-start: 2;
         grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .default-flex article img{
+        width: 100%;
+    
+    
+    }
+
+    .default-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .sokefelt{
+        display: flex;
+
+    }
+
+    footer nav ul li{
+        margin-left: 15px;
+    }
+
+    /*Endret på mellomrom mellom bokstaver i logo + lagt til margin for å sentrere*/
+
+    #logo{
+        letter-spacing: 5px;
+        margin-left: 60px;    
     }
 
 
