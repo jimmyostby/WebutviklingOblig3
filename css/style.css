@@ -31,6 +31,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    background-color: #e8dcb5;
 
 }
 
@@ -44,6 +45,7 @@ header nav ul{
 .sokefelt{
     align-items: center;
     margin-left: 76px;
+    padding-bottom: 5px;
     
 }
 
@@ -91,10 +93,12 @@ footer nav ul li{
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
+    padding-bottom: 10px;
 }
 
 .footer{
     align-content: center;
+    background-color: #e8dcb5;
 }
 
 /*Dette er for logg-innskjema*/
@@ -207,7 +211,7 @@ footer{
     }
 
     footer{
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
@@ -244,6 +248,18 @@ footer{
     #logo{
         letter-spacing: 5px;
         margin-left: 60px;    
+    }
+
+    .nyheter{
+        height: 396px;
+        width: 396px;
+        background-color: #e8dcb5;
+    }
+
+    .salg{
+        height: 396px;
+        width: 396px;
+        background-color: #e8dcb5;
     }
 
 
