@@ -44,7 +44,7 @@ header nav ul{
 .sokefelt{
     align-items: center;
     margin-left: 76px;
-    bor
+    
 }
 
 h1{
@@ -59,10 +59,17 @@ h1{
 }
 
 .logginnh1{
-    letter-spacing: 3px;
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 30px;
 }
 
+.logginnh5{
+    text-align: center;
+    margin: 40px;
+    height: 30px;
+    background-color: #a67a5b;
+    color: #f6efeb;
+}
 
 .pynt{
     background-color: #e8dcb5; 
@@ -88,6 +95,28 @@ footer nav ul li{
 
 .footer{
     align-content: center;
+}
+
+/*Dette er for logg-innskjema*/
+
+.logginn1{
+    text-align: center;
+}
+
+/*Dette er for Glemt passord*/
+.logginn2{
+    text-align: center;
+    margin: 40px;
+    background-color: #a67a5b;
+    color: #f6efeb;
+}
+
+/*Dette er for ny bruker*/
+.logginn3{
+    text-align: center;
+    margin: 40px;
+    background-color: #a67a5b;
+    color: #f6efeb;
 }
 
 /*Dette er flex på index-siden*/
@@ -154,9 +183,13 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    #logo{
+        font-size: 40px;
+    }
+
     header{
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
     }
@@ -192,17 +225,16 @@ footer{
         justify-content: space-around;
     }
 
+    /*Lagt til default-flex3 på logg inn siden*/
+
     .default-flex3 article{
         flex-basis: 33%;
-        min-width: 600px;
+        min-width: 300px;
         justify-content: center;
         text-align: center;
     }
-    .sokefelt{
-        display: flex;
 
-    }
-
+    
     footer nav ul li{
         margin-left: 15px;
     }
