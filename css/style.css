@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    margin: 1rem auto;
+    margin: 0 auto;
     max-width: 1200px;
     width: 100%;
     color: #a67a5b;
@@ -99,6 +99,7 @@ footer nav ul li{
 .footer{
     align-content: center;
     background-color: #e8dcb5;
+    font-size: 20px;
 }
 
 /*Dette er for logg-innskjema*/
