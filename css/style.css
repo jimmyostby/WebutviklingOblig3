@@ -37,9 +37,9 @@ header{
 
 header nav ul{
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     list-style: none;
-    padding-left: 33px;
+    padding-left: 5px;
 }
 
 .sokefelt{
@@ -71,6 +71,7 @@ h1{
     height: 30px;
     background-color: #a67a5b;
     color: #f6efeb;
+    border-radius: 5px;
 }
 
 .pynt{
@@ -84,29 +85,33 @@ h1{
 a{
     text-decoration: none;
     color: #a67a5b;
+    margin-left: 40px;
 }
 
 footer nav ul li{
     list-style: none;
-    text-align: center;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 10px;
+    display: flex;
+    align-contet: baseline;
 }
 
 .footer{
-    align-content: center;
     background-color: #e8dcb5;
     font-size: 20px;
+}
+
+.footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 
 /*Dette er for logg-innskjema*/
 
 .logginn1{
     text-align: center;
+    border-radius: 5px;
 }
+
 
 /*Dette er for Glemt passord*/
 .logginn2{
@@ -114,6 +119,7 @@ footer nav ul li{
     margin: 40px;
     background-color: #a67a5b;
     color: #f6efeb;
+    border-radius: 5px;
 }
 
 /*Dette er for ny bruker*/
@@ -122,6 +128,7 @@ footer nav ul li{
     margin: 40px;
     background-color: #a67a5b;
     color: #f6efeb;
+    border-radius: 5px;
 }
 
 /*Dette er flex på index-siden*/
@@ -190,6 +197,7 @@ footer{
 
     #logo{
         font-size: 40px;
+        
     }
 
     header{
@@ -218,10 +226,16 @@ footer{
         grid-row-end: 4;
     }
 
+    .logginn2{
+        padding-bottom: 10px;
+    }
+
+    .logginn3{
+        padding-bottom: 10px;
+    }
+    
     .default-flex article img{
         width: 100%;
-    
-    
     }
 
     .default-flex{
@@ -235,13 +249,18 @@ footer{
     .default-flex3 article{
         flex-basis: 33%;
         min-width: 300px;
+        max-width: 400px;
         justify-content: center;
         text-align: center;
+        margin: auto;
     }
 
-    
     footer nav ul li{
         margin-left: 15px;
+    }
+
+    .footer{
+        margin-top: 20px;
     }
 
     /*Endret på mellomrom mellom bokstaver i logo + lagt til margin for å sentrere*/
@@ -250,6 +269,10 @@ footer{
         letter-spacing: 5px;
         margin-left: 60px;    
     }
+
+   #menytekst{
+    display: none;
+   }
 
     .nyheter{
         height: 396px;
@@ -262,8 +285,6 @@ footer{
         width: 396px;
         background-color: #e8dcb5;
     }
-
-
 
 }
 
