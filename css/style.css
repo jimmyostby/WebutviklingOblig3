@@ -74,14 +74,6 @@ h1{
     border-radius: 5px;
 }
 
-.pynt{
-    background-color: #e8dcb5; 
-    height: 420px;
-    margin-bottom: auto; 
-    padding-bottom: 10px;  
-}
-
-
 a{
     text-decoration: none;
     color: #a67a5b;
@@ -131,8 +123,6 @@ footer nav ul li{
     border-radius: 5px;
 }
 
-/*Dette er flex på index-siden*/
-
 .default-flex{
     display: flex;
     flex-wrap: wrap;
@@ -160,8 +150,6 @@ ul{
 .default-flex article img{
     width: 100%;
 }
-
-/*Dette er grid på index-siden*/
 
 #grid-container{
     display: grid;
@@ -207,7 +195,6 @@ footer{
         grid-row-end: 2;
     }
     
-
     main{
         grid-column-start: 1;
         grid-column-end: 4;
@@ -269,10 +256,6 @@ footer{
         letter-spacing: 5px;
         margin-left: 60px;    
     }
-
-   #menytekst{
-    display: none;
-   }
 
     .nyheter{
         height: 396px;
