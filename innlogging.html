@@ -43,15 +43,15 @@
 
             <article class="logginn1">
                 <h5 class="logginnh5">Bli medlem og få 20% på første kjøp!</h5>
-            
-                <p>Epost eller mobilnr:</p>
-                <input type="text" name="username" placeholder="epost/mobilnr" size="15" maxlength="30">
-                <input type="submit" value="Gå">
-                <p>Passord:</p>
-                <input type="password" name="password" placeholder="passord" size="15" maxlength="30">
-                <input type="submit" value="Gå">
+                <form>
+                    <label for="email" class="epost">E-post:</label>
+                    <input type="email" name="email" placeholder="olanordmann@epost.no" id="email" required>
+                    <input type="submit" value="Gå">
+                    <label for="password" class="passord">Passord:</label>
+                    <input type="password" name="password" placeholder="*******" size="15" maxlength="30" id="required">
+                    <input type="submit" value="Gå">
+                </form>
             </article>
-
             <article class="logginn2">
                 <h3>Glemt passord?</h3>
                 <input type="submit" value="Trykk her!">
