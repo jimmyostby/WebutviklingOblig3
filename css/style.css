@@ -121,14 +121,16 @@ footer nav ul li{
     gap: 0.5rem;
     text-align: center;
     border-radius: 5px;
+    width: 350px;
+    height: 200px;
 }
 
 .epost{
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .passord{
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 /*Dette er for Glemt passord*/
@@ -207,7 +209,7 @@ footer{
 
 /*Dette er media queries for desktop*/
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 800px) {
     
     #grid-container{
         grid-template-columns: 1fr 1fr 1fr;
