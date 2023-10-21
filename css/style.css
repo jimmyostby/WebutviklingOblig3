@@ -251,6 +251,12 @@ footer{
         grid-row-end: 4;
     }
 
+    header nav ul{
+        font-size: 25px;
+    }
+
+
+
     .logginnh1{
         font-size: 40px;
     }
